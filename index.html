@@ -353,7 +353,7 @@
         <section class="hero-section">
             <h1 class="hero-title">Sign Language Translation</h1>
             <p class="hero-subtitle">
-                Real-time translation of Indonesian Sign Language (SIBI) using advanced computer vision and AI technology. Bridge communication gaps and create inclusive experiences.
+                Real-time translation of Indonesian Sign Language (SIBI) alphabet using advanced computer vision and AI technology. Learn and practice sign language letters with instant feedback.
             </p>
         </section>
 
@@ -423,11 +423,32 @@
     <script>
         let isActive = false;
         const translations = [
-            "Aku sudah makan",
-            "Kamu sudah makan",
-            "Selamat pagi",
-            "Terima kasih",
-            "Sampai jumpa"
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
         ];
 
         function activateCamera() {
@@ -446,7 +467,7 @@
                 // Simulate detection after 2 seconds
                 setTimeout(() => {
                     const randomTranslation = translations[Math.floor(Math.random() * translations.length)];
-                    translationText.textContent = `"${randomTranslation}"`;
+                    translationText.textContent = `${randomTranslation}`;
                     cameraIcon.innerHTML = '✅';
                 }, 2000);
             }
@@ -468,7 +489,7 @@
             if (isActive) {
                 const translationText = document.getElementById('translationText');
                 const randomTranslation = translations[Math.floor(Math.random() * translations.length)];
-                translationText.textContent = `"${randomTranslation}"`;
+                translationText.textContent = `${randomTranslation}`;
                 
                 // Visual feedback
                 const cameraIcon = document.getElementById('cameraIcon');
